@@ -1,9 +1,11 @@
-export const App1 = async function App1() {
+
+export default async function Page() {
+    await new Promise(resolve => setTimeout(resolve, 5000));
     return (
         <>
-            <h1>Welcome App1</h1>
+            <div className="font-bold text-3xl mb-5">Welcome App1</div>
             <div>
-                
+                This page is App1.
             </div>
         </>
     );
